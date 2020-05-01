@@ -49,6 +49,7 @@ public class Ball : MonoBehaviour
         transform.position = paddlePos + paddleToBallVector;
     }
 
+    // Runs every time there's a collision
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (hasStarted)
